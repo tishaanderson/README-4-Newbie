@@ -32,8 +32,27 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { title } = require('process');
 
 // TODO: Create an array of questions for user input
+
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      message: 'What is the title of your project/repo?',
+      name: 'title',
+    }
+  ]).then(response => {
+
+    console.log(response.title);
+
+    const README = `${response.title.toLowerCase().split(' ').join('')}.md`
+
+    fs.writeFile('README', JSON.stringify(response, null, '\t'), err => {
+      err ? console.error(err) : console.log('Congrats! Your README.md has been created.');
+    })
+  })
 
 const questions = [];
 console.log(questions);
