@@ -22,165 +22,81 @@
 
 const fs = require("fs");
 const inquirer = require("inquirer");
+const readmeTemplate = require("./generateMarkdown");
 
-const { title } = require("process");
+// const { title } = require("process");
 
 // TODO: Create an array of questions for user input
-
-inquirer
-  .prompt([
-    {
-      type: "input",
-      message: "What is the title of your project/repo?",
-      name: "Title",
-    },
-    {
-      type: "input",
-      message: "What is a description of the project?",
-      name: "Description",
-    },
-    {
-      type: "input",
-      message: "What are the installation instructions?",
-      name: "Installation",
-    },
-    {
-      type: "input",
-      message:
-        "What usage information may the user need in order to get started (i.e, User Story or Acceptance Criteria)?",
-      name: "Usage",
-    },
-    {
-      type: "input",
-      message: "What contribution guidelines do you want to include?",
-      name: "Contributing",
-    },
-    {
-      type: "input",
-      message: "What instructions do you want to include for your demo/test?",
-      name: "Test",
-    },
-    {
-      type: "list",
-      message: "Which license is the application covered under?",
-      name: "License",
-      choices: [
-        "Apache",
-        "MIT license",
-        "GNU GPLv3",
-        "The Unlicense",
-        "I am not sure yet",
-      ],
-    },
-    {
-      type: "input",
-      message: "What is your GitHub username?",
-      name: "GitHub",
-    },
-    {
-      type: "input",
-      message: "What is your email address?",
-      name: "Email",
-    },
-  ])
-  .then((responses) => {
-
-    fs.writeFile('README.md', readmeTemplate(responses), (err) => {
-      err ? console.error(err) : console.log("Congrats! Your README.md has been created.");
-    })
-  })
-
-
-const readmeTemplate = `# ${Title}
-
-  ## Description 
-
-  ${Description}
-
-  ## Table of Contents
-
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Test Sample](#test-sample)
-  - [License](#license)
-  - [Questions](#questions)
-
-
-  ## Installation
-
-  ${Installation}
-
-  ## Usage
-
-  ${Usage}
-
-  ### Contributing
-
-  ${Contributing}
-
-  ### Test
-
-  ${Test}
-
-  #### License
-
-  ${License}
-
-  #### Questions
-
-  If you have any further questions regarding the applications, feel free to reach out.
-    
-  - Email: ${Email}
-
-  - Github: ${GitHub}
-    
-  `
-
-    
-
-//------------------------------------------------------------
-
-const README = `${responses.toLowerCase().split(" ").join("")}.md`;
-
-const questions = [
-  "What is the title of your project/repo?",
-
-  "What is the description of the project?",
-
-  "What are the installation instructions?",
-
-  "What usage information may the user need in order to get started (i.e, User Story or Acceptance Criteria)?",
-
-  "What contribution guidelines do you want to include?",
-
-  "What instructions do you want to include for your demo/test?",
-
-  "Which license is the application covered under?",
-
-  "What is your GitHub username?",
-
-  "What is your email address?",
-];
-
-const [
-  Title,
-  Description,
-  Installation,
-  Usage,
-  Contributing,
-  Test,
-  License,
-  GitHub,
-  Email,
-] = questions;
 
 // TODO: Create a function to write README file
 function writeToFile(README, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is the title of your project/repo?",
+        name: "Title",
+      },
+      {
+        type: "input",
+        message: "What is a description of the project?",
+        name: "Description",
+      },
+      {
+        type: "input",
+        message: "What are the installation instructions?",
+        name: "Installation",
+      },
+      {
+        type: "input",
+        message:
+          "What usage information may the user need in order to get started (i.e, User Story or Acceptance Criteria)?",
+        name: "Usage",
+      },
+      {
+        type: "input",
+        message: "What contribution guidelines do you want to include?",
+        name: "Contributing",
+      },
+      {
+        type: "input",
+        message: "What instructions do you want to include for your demo/test?",
+        name: "Test",
+      },
+      {
+        type: "list",
+        message: "Which license is the application covered under?",
+        name: "License",
+        choices: [
+          "Apache-2.0",
+          "MIT",
+          "gpl-3.0",
+          "EPL-1.0",
+          "I don't know how to choose a license.",
+        ],
+      },
+      {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "GitHub",
+      },
+      {
+        type: "input",
+        message: "What is your email address?",
+        name: "Email",
+      },
+    ])
+    .then((responses) => {
+      fs.writeFile("README.md", readmeTemplate(responses), (err) => {
+        err
+          ? console.error(err)
+          : console.log("Congrats! Your README.md has been created.");
+      });
+    });
+}
 
 // Function call to initialize app
 init();
