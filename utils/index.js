@@ -20,6 +20,7 @@
 
 // TODO: Include packages needed for this application
 
+//pulling fileshare, packages, and other js file
 const fs = require("fs");
 const inquirer = require("inquirer");
 const readmeTemplate = require("./generateMarkdown");
@@ -28,8 +29,12 @@ const readmeTemplate = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 
+//used inquirer.prompt instead of questions array
+
 // TODO: Create a function to write README file
-function writeToFile(README, data) {}
+
+//writeFile function is called at bottom of function init
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -89,7 +94,7 @@ function init() {
         name: "Email",
       },
     ])
-    .then((responses) => {
+    .then((responses) => { //function to pull responsed and populate them in a new README file
       fs.writeFile("README.md", readmeTemplate(responses), (err) => {
         err
           ? console.error(err)

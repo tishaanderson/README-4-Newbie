@@ -41,6 +41,8 @@ function renderLicenseBadge(license) {
 function renderLicenseSection(license) {
 
   const licenseBadge = renderLicenseBadge(license);
+
+  //adds License section back into README file with chosen license badge
   const licenseSection = `#### License
 
   ${license === "I don't know how to choose a license" ? "You can learn how to choose a license here: " : renderLicenseBadge(license)}`;
@@ -50,6 +52,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 
+//template for user README file
 const readmeTemplate = function ({
   Title,
   Description,
@@ -109,5 +112,5 @@ const readmeTemplate = function ({
     
   `;
 };
-
+ //allows readme template function to be called in index.js file
 module.exports = readmeTemplate;
