@@ -76,10 +76,10 @@ function init() {
         message: "Which license is the application covered under?",
         name: "License",
         choices: [
-          "Apache-2.0",
+          "Apache",
           "MIT",
-          "gpl-3.0",
-          "EPL-1.0",
+          "GPL v3",
+          "Eclipse",
           "I don't know how to choose a license.",
         ],
       },

@@ -33,7 +33,7 @@
   
   #### License
 
-  
+  You can learn how to choose a license here: https://choosealicense.com/
 
   #### Questions
 
