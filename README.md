@@ -135,7 +135,7 @@ https://github.com/tishaanderson/README-4-Newbie/assets/136303804/29f1a170-777b-
 
     Remember to make sure your Table of Contents links function properly, as follows:
 
-
+https://github.com/tishaanderson/README-4-Newbie/assets/136303804/808e9145-b6fe-4d70-bb83-b2edc132bb96
 
 ## Credits
 
