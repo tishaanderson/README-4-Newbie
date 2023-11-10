@@ -106,7 +106,32 @@ Include any other screenshots you deem necessary to help someone who has never b
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
-For example:
+For example these are screenshots of how the application should work:
+
+    Once you run the command `node index.js`, you will be prompted to insert your answers, as so:
+
+<img width="75%" alt="Generated Questions & Answers Example" src="./assets/images/NodeFullTest.png">
+
+    Then, you will see your new README.md file populate inside your utils folder.
+
+<img width="35%" alt="New Populated README location" src="./assets/images/ImgFolderExample.png">      
+    
+    Simply, left click on it to view in raw format. 
+
+ <img width="75%" alt="New README file - Raw Markdown Version" src="./assets/images/NewReadmePage.png">     
+    
+    Or right click and select `Open Preview` in order to view it's preview.
+
+<img width="75%" alt="New README files (Raw Markdown and Preview) Displayed Side-by-Side" src="./assets/images/readmePreviewSide-by-side.png"> 
+
+    Don't forget to kill your terminal after populating your new READNME! You can find it on the top-right side of your terminal container. This will help prevent any issues with future projects.
+
+<img width="50%" alt="New README files (Raw Markdown and Preview) Displayed Side-by-Side" src="./assets/images/KillTerminalButton.png">
+
+
+    You may also include a video of how the application should work, as follows:
+    
+
 
 ## Credits
 

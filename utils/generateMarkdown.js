@@ -111,9 +111,9 @@ const readmeTemplate = function ({
 
   If you have any further questions regarding the applications, feel free to reach out.
     
-  - Email: ${Email}
-
   - Github: ${GitHub}
+
+  - Email: ${Email}
     
   `;
 };

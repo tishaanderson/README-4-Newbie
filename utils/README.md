@@ -1,8 +1,8 @@
-# Readme Generator
+# README Generator Test
 
   ## Description 
 
-  Guide on how to build a professional README.md file for your project.
+  How to build a professional README.md file for a project.
 
   ## Table of Contents
 
@@ -17,19 +17,23 @@
 
   ## Installation
 
-  First, run `npm init`. Then install inquirer by entering npm inquirer@8.2.4. Then run `node index.js`.
+  Include installation instructions here:
 
   ## Usage
 
-  Use the following questions as a guide: Enter description here.
+  Include usage information here:
+
+  ### Credits
+
+  List any collaborators here: tylercalvert@github
 
   ### Contributing
 
-  If you created an app or package and would like other developers to contribute to it, you can include guidelines for how to do so here.
+  Include guidelines for anyone who wants to contribute to the project to follow here:
   
   ### Test
 
-  Go the extra mile and write tests for your application and how to run them.
+  Include instructions for your test here:
   
   #### License
 
@@ -39,8 +43,8 @@
 
   If you have any further questions regarding the applications, feel free to reach out.
     
-  - Email: example@email.com
+  - Github: githubUserName
 
-  - Github: githubusername
+  - Email: example@email.com
     
   
