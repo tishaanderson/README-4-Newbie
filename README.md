@@ -4,39 +4,52 @@
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. 
 
-You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
+You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project. So that is what we are going to do here!
 
 The task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
+
+
 
 ## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-
-- [Credits](#credits)
-- [License](#license)
-
-
-- [Demo](#demo)
-- [Links](#links)
 - [Usage](#usage)
 - [Test Sample](#test-sample)
+- [Credits](#credits)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
-In order to install `inquirer`, please use `npm i inquirer@8.2.4` in your terminal.
+First, you will want to make sure that your repo includes a package.json with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
 
-The application will be invoked by using the following command:
+Then, you will install `inquirer` by entering `npm i inquirer@8.2.4` in your terminal.
+
+Once installed, the application will be invoked by using the following command:
 
 `node index.js`
 
-***Make sure to clone the starter code repository and make your own repository with the starter code. Do not fork the starter code repository!***
+## Usage
 
-Before you start, clone the [starter code](https://github.com/coding-boot-camp/potential-enigma).
+Here are some helpful tips from [The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) on how to create a professional README :
 
-## User Story
+A high-quality README file explains what your application does and why you used the technologies that you did. At a bare minimum, a README needs a title and a short description explaining the what, why, and how of the project.
+
+Use the following questions as a guide:
+
+What was your motivation?
+Why did you build this project?
+What problem does it solve?
+What did you learn?
+What makes your project stand out?
+Your README might also describe some of the challenges you faced, as well as the features you plan to implement in the future. And if your project is deployed, make sure to include a link to the deployed application so people can see it in action!
+
+README files are written in Markdown, and are always named README.md (note that README is in all caps). If you're new to Markdown, refer to the [GitHub guide on mastering markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) or search the internet for Markdown tutorials.
+
+Including a 'User Story' and 'Acceptance Criteria are optional. As long as you have a clear, precise Description, the user should know what the end goal is of your application. However, if you choose to include the user story and acceptance criteria sections, these are examples of both:
+
+User Story:
 
 ``````
 AS A developer
@@ -44,7 +57,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ``````
 
-## Acceptance Criteria
+Acceptance Criteria:
 
 ``````
 GIVEN a command-line application that accepts user input
@@ -63,10 +76,7 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ``````
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
+In this section, you can also provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
@@ -74,16 +84,49 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
+Preview:
+
+![Assets Folder Screenshot Example](assets/images/ImgFolderExample.png)
+
+If you want to include an image but adjust it's size, use the following syntax instead:
+
+    ```
+    <img width="enter new sizing here" alt="alt text" src="./assets/images/screenshot.png">
+    ```
+Preview:
+
+<img width="35%" alt="Assets Folder Screenshot Example" src="./assets/images/ImgFolderExample.png">
+
+Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+
+
+
+
 ## Test Sample
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
+For example:
 
 ## Credits
+
+List your collaborators, if any, with links to their GitHub profiles.
+
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+
+If you followed tutorials, include links to those here as well.
+
+For example:
 
 [Coding Boot Camp GitHub Page](https://github.com/coding-boot-camp)
 
 [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+
+[README Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Contributing
+
+If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## License
 
