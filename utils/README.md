@@ -31,7 +31,7 @@
 
   Include guidelines for anyone who wants to contribute to the project to follow here:
   
-  ### Test
+  ### Test Sample
 
   Include instructions for your test here:
   

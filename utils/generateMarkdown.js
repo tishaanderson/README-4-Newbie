@@ -101,7 +101,7 @@ const readmeTemplate = function ({
 
   ${Contributing}
   
-  ### Test
+  ### Test Sample
 
   ${Test}
   
