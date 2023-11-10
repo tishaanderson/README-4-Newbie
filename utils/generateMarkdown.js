@@ -79,6 +79,7 @@ const readmeTemplate = function ({
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Credits](#credits)
   - [Contributing](#contributing)
   - [Test Sample](#test-sample)
   - [License](#license)
