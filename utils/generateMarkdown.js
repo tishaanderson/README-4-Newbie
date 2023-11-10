@@ -58,6 +58,7 @@ const readmeTemplate = function ({
   Description,
   Installation,
   Usage,
+  Credits,
   Contributing,
   Test,
   License,
@@ -91,6 +92,10 @@ const readmeTemplate = function ({
   ## Usage
 
   ${Usage}
+
+  ### Credits
+
+  ${Credits}
 
   ### Contributing
 

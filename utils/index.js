@@ -52,7 +52,7 @@ function init() {
       },
       {
         type: "input",
-        message: "What are the installation instructions?",
+        message: "What installation instructions will the user need to user your app?",
         name: "Installation",
       },
       {
@@ -60,6 +60,11 @@ function init() {
         message:
           "What usage information may the user need in order to get started (i.e, User Story or Acceptance Criteria)?",
         name: "Usage",
+      },
+      {
+        type: "input",
+        message: "Which, if any, collaborators would you like to include?",
+        name: "Credits",
       },
       {
         type: "input",
