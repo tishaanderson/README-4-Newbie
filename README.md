@@ -133,6 +133,10 @@ For example these are screenshots of how the application should work:
     
 https://github.com/tishaanderson/README-4-Newbie/assets/136303804/29f1a170-777b-4dcb-a15c-bd71a688d355
 
+    Remember to make sure your Table of Contents links function properly, as follows:
+
+
+
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.

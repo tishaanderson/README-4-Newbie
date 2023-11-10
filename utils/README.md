@@ -9,6 +9,7 @@
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Credits](#credits)
   - [Contributing](#contributing)
   - [Test Sample](#test-sample)
   - [License](#license)
@@ -21,15 +22,15 @@
 
   ## Usage
 
-  Include usage information here:
+   Include usage information here:
 
   ### Credits
 
-  List any collaborators here: tylercalvert@github
+   List any collaborators here: tylercalvert@github
 
   ### Contributing
 
-  Include guidelines for anyone who wants to contribute to the project to follow here:
+   Include guidelines for anyone who wants to contribute to the project to follow here:
   
   ### Test Sample
 
