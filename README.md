@@ -47,7 +47,19 @@ Your README might also describe some of the challenges you faced, as well as the
 
 README files are written in Markdown, and are always named README.md (note that README is in all caps). If you're new to Markdown, refer to the [GitHub guide on mastering markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) or search the internet for Markdown tutorials.
 
-Including a 'User Story' and 'Acceptance Criteria are optional. As long as you have a clear, precise Description, the user should know what the end goal is of your application. However, if you choose to include the user story and acceptance criteria sections, these are examples of both:
+Including a 'User Story' and 'Acceptance Criteria are optional. As long as you have a clear, precise Description, the user should know what the end goal is of your application. However, if you choose to include the user story and acceptance criteria sections, use this syntax:
+
+    User Story:
+
+    ``````
+    AS a [insert the type of user you have in mind to use your app here]
+    I WANT [insert what you are trying to create here]
+    SO THAT [insert what your overall goal is behind creating your app here]
+    ``````
+
+Use the Given/When/Then template for the acceptance criteria. You can learn more about how to write acceptance criteria [here](https://rubygarage.org/blog/clear-acceptance-criteria-and-why-its-important#:~:text=Here%20are%20a%20few%20tips,deliver%20and%20stick%20to%20it.).
+
+Below are examples of both:
 
 User Story:
 
@@ -106,9 +118,9 @@ Include any other screenshots you deem necessary to help someone who has never b
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
-For example these are screenshots of how the application should work:
+For example these are screenshots of how the README-4-Newbie application should work:
 
-    Once you run the command `node index.js`, you will be prompted to insert your answers, as so:
+    Once you install `inquirer` and run the command `node index.js`, you will be prompted to insert your answers, as so:
 
 <img width="75%" alt="Generated Questions & Answers Example" src="./assets/images/NodeFullTest.png">
 
@@ -124,7 +136,7 @@ For example these are screenshots of how the application should work:
 
 <img width="75%" alt="New README files (Raw Markdown and Preview) Displayed Side-by-Side" src="./assets/images/readmePreviewSide-by-side.png"> 
 
-    Don't forget to kill your terminal after populating your new READNME! You can find it on the top-right side of your terminal container. This will help prevent any issues with future projects.
+    Don't forget to kill your terminal after populating your new README! You can find it on the top-right side of your terminal container. This will help prevent any issues with future projects.
 
 <img width="50%" alt="New README files (Raw Markdown and Preview) Displayed Side-by-Side" src="./assets/images/KillTerminalButton.png">
 
